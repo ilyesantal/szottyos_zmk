@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_SZOTTYOS_LEFT
+    def_bool $(shields_list_contains,szottyos_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_SZOTTYOS_RIGHT
+    def_bool $(shields_list_contains,szottyos_right)

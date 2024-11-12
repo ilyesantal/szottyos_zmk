@@ -1,0 +1,13 @@
+file_format: "1"
+id: szottyos
+name: Szottyos
+type: shield
+url: https://github.com/ilyesantal/szottyos_zmk/
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - szottyos_left
+  - szottyos_right
