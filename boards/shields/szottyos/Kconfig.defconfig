@@ -5,13 +5,27 @@ config ZMK_KEYBOARD_NAME
     default "szotyos_kbd"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    def_bool y
 
 endif
 
 if SHIELD_SZOTTYOS_LEFT || SHIELD_SZOTTYOS_RIGHT
 
 config ZMK_SPLIT
-    default y
+    def_bool y
+
+config ZMK_LEADER_MAX_SEQUENCES_PER_KEY
+  int
+	default 27
+config ZMK_LEADER_MAX_KEYS_PER_SEQUENCE
+  int
+	default 2
+
+config ZMK_COMBO_MAX_COMBOS_PER_KEY
+  int
+	default 6
+config ZMK_COMBO_MAX_KEYS_PER_COMBO
+  int
+	default 3
 
 endif
